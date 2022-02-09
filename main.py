@@ -22,7 +22,11 @@ operation_1 = float(bill) * float(porcent)
 
 #value includes the tip and divided between the relevant people
 operation_2 = (bill + operation_1) / people
-  
-print(f'Each person pay: $ {operation_2}')
+
+#so that it shows us two decimals instead of one
+aplication = round(operation_2, 2)
+aplication = "{:.2f}".format(operation_2)
+
+print(f'Each person pay: $ {aplication}')
 
 #print(operation_2)
