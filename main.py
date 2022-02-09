@@ -9,19 +9,19 @@
 
 print('* Welcome to the tip calculator! *')
 
-bill = input('What was the total bill? $')
+bill = float(input('What was the total bill? $'))
 
-like_give = input('How much tip would you like to give 10, 12, or 15? ')
+give = int(input('How much tip would you like to give 10, 12, or 15? '))
 
-many_people = input('How many people to split the bill? ')
+people = int(input('How many people to split the bill? '))
 
 #obtain porcent 
-porcent = ((int(like_give) / 100))
+porcent = (give / 100)
 
 operation_1 = float(bill) * float(porcent)
 
 #value includes the tip and divided between the relevant people
-operation_2 = (float(bill) + float(operation_1)) / float(many_people)
+operation_2 = (bill + operation_1) / people
   
 print(f'Each person pay: $ {operation_2}')
 
